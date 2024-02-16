@@ -1,0 +1,4 @@
+docker build -f Dockerfile_base --progress=plain -t golemdocker_base .
+docker build -f Dockerfile --progress=plain -t golemdocker:latest .
+docker run -p <PORT>:<PORT> golemdocker:latest
+# then go to 127.0.0.1:<PORT>
